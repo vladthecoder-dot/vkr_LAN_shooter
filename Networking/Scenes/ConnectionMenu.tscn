@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dcq1e4hatkwp8"]
+
+[ext_resource type="Script" uid="uid://de2304e4hhj3s" path="res://Networking/Scripts/ConnectionMenu.cs" id="1_w285x"]
+
+[node name="ConnectionMenu" type="VBoxContainer" unique_id=1973550157 node_paths=PackedStringArray("HostButton", "ConnectButton", "AddressLine")]
+offset_right = 261.0
+offset_bottom = 103.0
+script = ExtResource("1_w285x")
+HostButton = NodePath("HostButton")
+ConnectButton = NodePath("ConnectButton")
+AddressLine = NodePath("AddressLine")
+
+[node name="HostButton" type="Button" parent="." unique_id=1347611235]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Host"
+
+[node name="ConnectButton" type="Button" parent="." unique_id=1994314161]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Connect to"
+
+[node name="AddressLine" type="LineEdit" parent="." unique_id=524498453]
+layout_mode = 2
+size_flags_vertical = 0
+clear_button_enabled = true

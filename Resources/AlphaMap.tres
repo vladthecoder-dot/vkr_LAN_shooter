@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MapResource" format=3 uid="uid://bwbp5g1cn0s4c"]
+
+[ext_resource type="Texture2D" uid="uid://c1osdfsshjmxi" path="res://Sprites/MapTiles/RedTile.png" id="1_d60gn"]
+[ext_resource type="Script" uid="uid://d4kc7upcasis3" path="res://Resources/MapResource.cs" id="1_rkyip"]
+
+[resource]
+script = ExtResource("1_rkyip")
+Name = "AlphaMap"
+Preview = ExtResource("1_d60gn")
+MapScenePath = "res://Maps/AlphaMap.tscn"
+PlayersCap = 6
+metadata/_custom_type_script = "uid://d4kc7upcasis3"

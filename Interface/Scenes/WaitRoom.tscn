@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dvcrm2gln7k7n"]
+
+[ext_resource type="Script" uid="uid://beeih5xgtgvd6" path="res://Interface/Scripts/WaitRoom.cs" id="1_iumfq"]
+
+[node name="WaitRoom" type="Control" unique_id=455518451 node_paths=PackedStringArray("WaitRoomLabel", "PlayerCountLabel", "DisconnectButton", "StartButton", "PlayerList")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iumfq")
+WaitRoomLabel = NodePath("VBoxContainer/WaitText")
+PlayerCountLabel = NodePath("VBoxContainer/PlayerCount")
+DisconnectButton = NodePath("VBoxContainer/HBoxContainer/DisconnectButton")
+StartButton = NodePath("VBoxContainer/HBoxContainer/StartButton")
+PlayerList = NodePath("VBoxContainer/PlayerList")
+
+[node name="Panel" type="ColorRect" parent="." unique_id=425569777]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.60784316)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=452801874]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -108.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WaitText" type="Label" parent="VBoxContainer" unique_id=93821177]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "WAIT_TEXT"
+horizontal_alignment = 1
+
+[node name="PlayerCount" type="Label" parent="VBoxContainer" unique_id=1699572624]
+layout_mode = 2
+text = "PLAYER_COUNT"
+horizontal_alignment = 1
+
+[node name="PlayerList" type="VBoxContainer" parent="VBoxContainer" unique_id=1534455334]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1803541787]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="DisconnectButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1847476269]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Disconnect"
+
+[node name="StartButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=217691365]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Start*"
+
+[node name="WarningLabel" type="Label" parent="VBoxContainer" unique_id=1560061876]
+layout_mode = 2
+text = "*after the match started any connection attempt will be denied"
+horizontal_alignment = 1

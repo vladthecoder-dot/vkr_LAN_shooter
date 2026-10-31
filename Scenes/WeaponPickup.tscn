@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cy7srawd2dqkj"]
+
+[ext_resource type="Script" uid="uid://vmmapnmvsg4m" path="res://Scripts/WeaponPickup.cs" id="1_tm65s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_phod8"]
+
+[node name="WeaponPickupArea" type="Area2D" unique_id=1414705421 node_paths=PackedStringArray("PickupSprite")]
+collision_mask = 2
+script = ExtResource("1_tm65s")
+PickupSprite = NodePath("PickupSprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2057883337]
+shape = SubResource("CircleShape2D_phod8")
+
+[node name="PickupSprite" type="Sprite2D" parent="." unique_id=1772313920]

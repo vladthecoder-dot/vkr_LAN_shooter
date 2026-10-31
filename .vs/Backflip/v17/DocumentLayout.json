@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Godot Projects\\Backflip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\lanbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\lanbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\lanlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\lanlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\deathmatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\deathmatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeathmatchManager.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\DeathmatchManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\DeathmatchManager.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\DeathmatchManager.cs",
+              "RelativeToolTip": "Scripts\\DeathmatchManager.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAH0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T01:02:05.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerSpawner.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\PlayerSpawner.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\PlayerSpawner.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\PlayerSpawner.cs",
+              "RelativeToolTip": "Networking\\Scripts\\PlayerSpawner.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T01:02:01.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\NetworkManager.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\NetworkManager.cs",
+              "RelativeToolTip": "Networking\\Scripts\\NetworkManager.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAL8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T01:01:59.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LanListener.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanListener.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\LanListener.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanListener.cs",
+              "RelativeToolTip": "Networking\\Scripts\\LanListener.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T01:01:56.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LanBroadcaster.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanBroadcaster.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\LanBroadcaster.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanBroadcaster.cs",
+              "RelativeToolTip": "Networking\\Scripts\\LanBroadcaster.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T01:01:49.353Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

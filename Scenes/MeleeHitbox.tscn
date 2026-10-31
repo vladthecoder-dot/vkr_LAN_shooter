@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://buhw0w7rlvsl6"]
+
+[ext_resource type="Script" uid="uid://csuv3mwnbyn1i" path="res://Scripts/MeleeHitbox.cs" id="1_7v80g"]
+[ext_resource type="SpriteFrames" uid="uid://wwnyk2qteg3f" path="res://Sprites/PunchSprites/PunchFrames.tres" id="2_7j8w0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2nqw"]
+size = Vector2(50.5, 60)
+
+[node name="MeleeHitbox" type="Area2D" unique_id=79613682 node_paths=PackedStringArray("MeleeShape")]
+collision_mask = 2
+script = ExtResource("1_7v80g")
+MeleeShape = NodePath("MeleeShape")
+
+[node name="MeleeShape" type="CollisionShape2D" parent="." unique_id=836991668]
+position = Vector2(25, 0)
+shape = SubResource("RectangleShape2D_b2nqw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1294164995]
+position = Vector2(21, 1)
+sprite_frames = ExtResource("2_7j8w0")
+autoplay = "default"
+frame_progress = 0.27886203
+speed_scale = 5.0

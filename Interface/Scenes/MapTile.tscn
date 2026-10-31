@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://clo03aag78xma"]
+
+[ext_resource type="Texture2D" uid="uid://cl7gubjddilpu" path="res://icon.svg" id="1_kwjpc"]
+
+[node name="MapTile" type="TextureButton" unique_id=2037708970]
+custom_minimum_size = Vector2(128, 128)
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("1_kwjpc")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="." unique_id=967498936]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -41.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MapName" type="Label" parent="." unique_id=1277004590]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = -42.0
+offset_right = 46.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "MAP_NAME"
+horizontal_alignment = 1

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://b685vjtv7wntn"]
+
+[ext_resource type="Script" uid="uid://c5ur020youwyi" path="res://Scripts/Gun.cs" id="1_jkvh0"]
+[ext_resource type="PackedScene" uid="uid://bw3e527v044fb" path="res://Scenes/ThrownWeapon.tscn" id="2_cgpo0"]
+[ext_resource type="SpriteFrames" uid="uid://dk30yel7tovf8" path="res://Sprites/GunSprites/HitFrames.tres" id="3_37v6b"]
+[ext_resource type="SpriteFrames" uid="uid://dscmrs76dofbp" path="res://Sprites/GunSprites/GunFrames.tres" id="3_cgpo0"]
+[ext_resource type="AudioStream" uid="uid://dpqqc5dfkcdly" path="res://Sounds/mixkit-game-gun-shot-1662.mp3" id="5_phyfd"]
+[ext_resource type="AudioStream" uid="uid://xby3gmqcjbam" path="res://Sounds/mixkit-revolver-chamber-spin-1674.wav" id="6_54o5q"]
+
+[node name="Weapon" type="Node2D" unique_id=453122869 node_paths=PackedStringArray("MuzzleNode", "WeaponSprite", "SpawnSound", "ShotSound")]
+script = ExtResource("1_jkvh0")
+ProjectileY = -0.25
+MuzzleNode = NodePath("Muzzle")
+AttackCooldown = 0.2
+Damage = 5
+ThrownWeaponScene = ExtResource("2_cgpo0")
+WeaponSprite = NodePath("WeaponGif")
+HitFrames = ExtResource("3_37v6b")
+SpawnSound = NodePath("Spawn")
+ShotSound = NodePath("Shot")
+
+[node name="WeaponGif" type="AnimatedSprite2D" parent="." unique_id=1519048221]
+position = Vector2(12, -4)
+sprite_frames = ExtResource("3_cgpo0")
+animation = &"gun_shooting"
+frame = 3
+frame_progress = 1.0
+
+[node name="Muzzle" type="Node2D" parent="." unique_id=459239712]
+position = Vector2(2, -10)
+
+[node name="ThrownWeaponSpawner" type="MultiplayerSpawner" parent="." unique_id=301916396]
+_spawnable_scenes = PackedStringArray("uid://bw3e527v044fb")
+spawn_path = NodePath("../Muzzle")
+
+[node name="Spawn" type="AudioStreamPlayer" parent="." unique_id=2117844080]
+stream = ExtResource("6_54o5q")
+volume_db = -30.0
+max_polyphony = 6
+
+[node name="Shot" type="AudioStreamPlayer" parent="." unique_id=555824188]
+stream = ExtResource("5_phyfd")
+volume_db = -30.0
+max_polyphony = 36

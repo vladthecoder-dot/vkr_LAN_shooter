@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bw3e527v044fb"]
+
+[ext_resource type="Script" uid="uid://bdwjxtpq65sag" path="res://Scripts/Projectile.cs" id="1_0d3w6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rbthh"]
+
+[node name="ProjectileArea" type="Area2D" unique_id=1111346306 node_paths=PackedStringArray("Sprite")]
+collision_mask = 3
+script = ExtResource("1_0d3w6")
+Sprite = NodePath("WeaponSprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853945692]
+shape = SubResource("CircleShape2D_rbthh")
+
+[node name="WeaponSprite" type="Sprite2D" parent="." unique_id=1524460949]

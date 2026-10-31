@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://26nu6c044w2l"]
+
+[ext_resource type="Script" uid="uid://dh6hntep6hp2e" path="res://Interface/Scripts/GameOverScreen.cs" id="1_pimbr"]
+[ext_resource type="AudioStream" uid="uid://4lc2nnefmx3i" path="res://Sounds/mixkit-game-level-completed-2059.wav" id="2_1nkku"]
+[ext_resource type="AudioStream" uid="uid://bw1bks7tx2vbo" path="res://Sounds/mixkit-player-losing-or-failing-2042.wav" id="3_5ug7v"]
+
+[node name="GameOverScreen" type="Control" unique_id=1811332930 node_paths=PackedStringArray("DisconnectButton", "RestartButton", "ScoreTable", "GameOverLabel", "WinSound", "LoseSound")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pimbr")
+DisconnectButton = NodePath("VBoxContainer/HBoxContainer/DisconnectButton")
+RestartButton = NodePath("VBoxContainer/HBoxContainer/RestartButton")
+ScoreTable = NodePath("VBoxContainer/ScoreBoard")
+GameOverLabel = NodePath("VBoxContainer/GameOverLabel")
+WinSound = NodePath("Win")
+LoseSound = NodePath("Lose")
+
+[node name="Panel" type="Panel" parent="." unique_id=332559145]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1897885666]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -108.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOverLabel" type="Label" parent="VBoxContainer" unique_id=1721123853]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "GAME_OVER_TEXT"
+horizontal_alignment = 1
+
+[node name="ScoreBoard" type="RichTextLabel" parent="VBoxContainer" unique_id=2001334119]
+layout_mode = 2
+text = "SCOREBOARD"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=924956905]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="DisconnectButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=306254816]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Disconnect"
+
+[node name="RestartButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=297948623]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Restart"
+
+[node name="Win" type="AudioStreamPlayer" parent="." unique_id=1567981897]
+stream = ExtResource("2_1nkku")
+volume_db = -30.0
+
+[node name="Lose" type="AudioStreamPlayer" parent="." unique_id=452782261]
+stream = ExtResource("3_5ug7v")
+volume_db = -30.0

@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://riug8jb62qhj"]
+
+[ext_resource type="Script" uid="uid://c18y261g6grhf" path="res://Interface/Scripts/OptionsMenu.cs" id="1_bchw5"]
+
+[node name="OptionsMenu" type="Control" unique_id=647285602 node_paths=PackedStringArray("CloseButton", "FullscreenCheckBox", "VolumeSlider", "AttackInputChangeButton", "ThrowInputChangeButton", "MeleeInputChangeButton", "BackflipInputChangeButton", "SlideInputChangeButton", "JumpInputChangeButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bchw5")
+CloseButton = NodePath("MarginContainer/VBoxContainer/CloseButton")
+FullscreenCheckBox = NodePath("MarginContainer/VBoxContainer/WindowOptions/FullscreenCheckbox")
+VolumeSlider = NodePath("MarginContainer/VBoxContainer/SoundOption/VolumeSlider")
+AttackInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/AttackInputButton")
+ThrowInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/ThrowInputButton")
+MeleeInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/MeleeInputButton")
+BackflipInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/BackflipInputButton")
+SlideInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/SlideInputButton")
+JumpInputChangeButton = NodePath("MarginContainer/VBoxContainer/Inputs/JumpInputButton")
+
+[node name="Panel" type="Panel" parent="." unique_id=996763468]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=77379354]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=153153988]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2080698207]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Back to menu"
+
+[node name="OptionsLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=740071436]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WindowOptions" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=857468551]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="FullscreenSpacer" type="Control" parent="MarginContainer/VBoxContainer/WindowOptions" unique_id=1737573643]
+layout_mode = 2
+
+[node name="FullscreenLabel" type="Label" parent="MarginContainer/VBoxContainer/WindowOptions" unique_id=1468805658]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="FullscreenCheckbox" type="CheckBox" parent="MarginContainer/VBoxContainer/WindowOptions" unique_id=349059193]
+layout_mode = 2
+
+[node name="SoundOption" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1195042340]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="VolumeSpacer" type="Control" parent="MarginContainer/VBoxContainer/SoundOption" unique_id=579432447]
+layout_mode = 2
+
+[node name="VolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/SoundOption" unique_id=921979360]
+layout_mode = 2
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="MarginContainer/VBoxContainer/SoundOption" unique_id=628714268]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 50.0
+value = 50.0
+
+[node name="VolumeSpacer2" type="Control" parent="MarginContainer/VBoxContainer/SoundOption" unique_id=728139937]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+
+[node name="InputsLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1308045925]
+layout_mode = 2
+text = "    Inputs"
+vertical_alignment = 2
+
+[node name="Inputs" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=942323264]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="AttackInputSeparator" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=489044791]
+layout_mode = 2
+
+[node name="AttackInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1388434531]
+layout_mode = 2
+text = "BLANK"
+
+[node name="AttackInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1348994847]
+layout_mode = 2
+text = "Attack"
+
+[node name="ThrowInputSeparator" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=789486310]
+layout_mode = 2
+
+[node name="ThrowInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=727514800]
+layout_mode = 2
+text = "BLANK"
+
+[node name="ThrowInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=658226841]
+layout_mode = 2
+text = "Throw"
+
+[node name="MeleeInputSeparator" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=704960944]
+layout_mode = 2
+
+[node name="MeleeInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1117575611]
+layout_mode = 2
+text = "BLANK"
+
+[node name="MeleeInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1743096882]
+layout_mode = 2
+text = "Melee"
+
+[node name="BackflipInputSeparator" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=790685570]
+layout_mode = 2
+
+[node name="BackflipInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=455703072]
+layout_mode = 2
+text = "BLANK"
+
+[node name="BackflipInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1763829542]
+layout_mode = 2
+text = "Backflip"
+
+[node name="SlideInputSpacer" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1839592239]
+layout_mode = 2
+
+[node name="SlideInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=836614300]
+layout_mode = 2
+text = "BLANK"
+
+[node name="SlideInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=705868025]
+layout_mode = 2
+text = "Slide"
+
+[node name="JumpInputSpacer" type="Control" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1445444031]
+layout_mode = 2
+
+[node name="JumpInputButton" type="Button" parent="MarginContainer/VBoxContainer/Inputs" unique_id=202198702]
+layout_mode = 2
+text = "BLANK"
+
+[node name="JumpInputLabel" type="Label" parent="MarginContainer/VBoxContainer/Inputs" unique_id=1665123709]
+layout_mode = 2
+text = "Jump"

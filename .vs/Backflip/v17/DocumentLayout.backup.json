@@ -1,0 +1,298 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Godot Projects\\Backflip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\deathmatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\deathmatchmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\interface\\scripts\\playmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:interface\\scripts\\playmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\meleehitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\meleehitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\healthcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\meleecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\meleecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\weaponpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\weaponpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\weaponinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\weaponinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\lanlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\lanlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\scripts\\useroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:scripts\\useroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\interface\\scripts\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:interface\\scripts\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|d:\\godot projects\\backflip\\networking\\scripts\\lanbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9D45F-AE02-4F80-9A86-90D813D657D5}|Backflip.csproj|solutionrelative:networking\\scripts\\lanbroadcaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\NetworkManager.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\NetworkManager.cs",
+              "RelativeToolTip": "Networking\\Scripts\\NetworkManager.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T04:36:08.951Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeathmatchManager.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\DeathmatchManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\DeathmatchManager.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\DeathmatchManager.cs",
+              "RelativeToolTip": "Scripts\\DeathmatchManager.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAK8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T11:54:40.588Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Interface\\Scripts\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "Interface\\Scripts\\OptionsMenu.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Interface\\Scripts\\OptionsMenu.cs",
+              "RelativeToolTip": "Interface\\Scripts\\OptionsMenu.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T12:12:34.8Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserOptions.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\UserOptions.cs",
+              "RelativeDocumentMoniker": "Scripts\\UserOptions.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\UserOptions.cs",
+              "RelativeToolTip": "Scripts\\UserOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T02:16:54.536Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HelperFunctions.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\HelperFunctions.cs",
+              "RelativeDocumentMoniker": "Scripts\\HelperFunctions.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\HelperFunctions.cs",
+              "RelativeToolTip": "Scripts\\HelperFunctions.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T16:27:59.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayMenu.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Interface\\Scripts\\PlayMenu.cs",
+              "RelativeDocumentMoniker": "Interface\\Scripts\\PlayMenu.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Interface\\Scripts\\PlayMenu.cs",
+              "RelativeToolTip": "Interface\\Scripts\\PlayMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T16:47:27.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeaponPickup.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\WeaponPickup.cs",
+              "RelativeDocumentMoniker": "Scripts\\WeaponPickup.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\WeaponPickup.cs",
+              "RelativeToolTip": "Scripts\\WeaponPickup.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T21:19:41.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HealthComponent.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\HealthComponent.cs",
+              "RelativeDocumentMoniker": "Scripts\\HealthComponent.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\HealthComponent.cs",
+              "RelativeToolTip": "Scripts\\HealthComponent.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:04:28.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeleeHitbox.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\MeleeHitbox.cs",
+              "RelativeDocumentMoniker": "Scripts\\MeleeHitbox.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\MeleeHitbox.cs",
+              "RelativeToolTip": "Scripts\\MeleeHitbox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T03:04:07.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MeleeComponent.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\MeleeComponent.cs",
+              "RelativeDocumentMoniker": "Scripts\\MeleeComponent.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\MeleeComponent.cs",
+              "RelativeToolTip": "Scripts\\MeleeComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T03:03:19.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\Projectile.cs",
+              "RelativeDocumentMoniker": "Scripts\\Projectile.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\Projectile.cs",
+              "RelativeToolTip": "Scripts\\Projectile.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T03:14:19.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\Gun.cs",
+              "RelativeDocumentMoniker": "Scripts\\Gun.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\Gun.cs",
+              "RelativeToolTip": "Scripts\\Gun.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T18:43:48.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerCharacter.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\PlayerCharacter.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerCharacter.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\PlayerCharacter.cs",
+              "RelativeToolTip": "Scripts\\PlayerCharacter.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAIAwwMcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T02:45:53.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LanListener.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanListener.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\LanListener.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanListener.cs",
+              "RelativeToolTip": "Networking\\Scripts\\LanListener.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T03:39:55.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LanBroadcaster.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanBroadcaster.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\LanBroadcaster.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\LanBroadcaster.cs",
+              "RelativeToolTip": "Networking\\Scripts\\LanBroadcaster.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T03:39:57.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlayerSpawner.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\PlayerSpawner.cs",
+              "RelativeDocumentMoniker": "Networking\\Scripts\\PlayerSpawner.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Networking\\Scripts\\PlayerSpawner.cs",
+              "RelativeToolTip": "Networking\\Scripts\\PlayerSpawner.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T23:57:07.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeaponInterfaces.cs",
+              "DocumentMoniker": "D:\\Godot Projects\\Backflip\\Scripts\\WeaponInterfaces.cs",
+              "RelativeDocumentMoniker": "Scripts\\WeaponInterfaces.cs",
+              "ToolTip": "D:\\Godot Projects\\Backflip\\Scripts\\WeaponInterfaces.cs",
+              "RelativeToolTip": "Scripts\\WeaponInterfaces.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T14:10:30.328Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://btbcesxkpt5h7"]
+
+[ext_resource type="Script" uid="uid://cnfbf63ewws4f" path="res://Interface/Scripts/MainMenu.cs" id="1_5x61b"]
+[ext_resource type="PackedScene" uid="uid://bmcfmx673ushe" path="res://Interface/Scenes/PlayMenu.tscn" id="2_inrqp"]
+[ext_resource type="PackedScene" uid="uid://4jkwkmouyapo" path="res://Interface/Scenes/GameCreationMenu.tscn" id="3_5mxyc"]
+[ext_resource type="PackedScene" uid="uid://riug8jb62qhj" path="res://Interface/Scenes/OptionsMenu.tscn" id="4_0k6xq"]
+
+[node name="MainMenu" type="Control" unique_id=2053595614]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="Panel" parent="." unique_id=639946650 node_paths=PackedStringArray("PlayButton", "SettingsButton", "QuitButton", "Play", "Options", "PlayerNameEdit")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5x61b")
+PlayButton = NodePath("ButtonsContainer/Play")
+SettingsButton = NodePath("ButtonsContainer/Options")
+QuitButton = NodePath("ButtonsContainer/Quit")
+Play = NodePath("PlayMenu")
+Options = NodePath("OptionsMenu")
+PlayerNameEdit = NodePath("MarginContainer/HBoxContainer/NameEdit")
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu" unique_id=114362443]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -462.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/MarginContainer" unique_id=2037485930]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Menu/MarginContainer/HBoxContainer" unique_id=2134912337]
+layout_mode = 2
+text = "Your name"
+
+[node name="NameEdit" type="LineEdit" parent="Menu/MarginContainer/HBoxContainer" unique_id=896072115]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Menu" unique_id=1004275278]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 87.0
+offset_right = 377.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 60
+text = "BACKFLIP"
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="Menu" unique_id=904021280]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 346.0
+offset_right = 338.0
+offset_bottom = 591.0
+
+[node name="Play" type="Button" parent="Menu/ButtonsContainer" unique_id=1253966477]
+layout_mode = 2
+text = "Play"
+
+[node name="Options" type="Button" parent="Menu/ButtonsContainer" unique_id=1596007265]
+layout_mode = 2
+text = "Settings"
+
+[node name="Quit" type="Button" parent="Menu/ButtonsContainer" unique_id=1719182132]
+layout_mode = 2
+text = "Quit"
+
+[node name="PlayMenu" parent="Menu" unique_id=1180949608 node_paths=PackedStringArray("GameCreation") instance=ExtResource("2_inrqp")]
+visible = false
+layout_mode = 1
+GameCreation = NodePath("../GameCreationMenu")
+
+[node name="GameCreationMenu" parent="Menu" unique_id=915298518 instance=ExtResource("3_5mxyc")]
+visible = false
+layout_mode = 1
+
+[node name="OptionsMenu" parent="Menu" unique_id=647285602 instance=ExtResource("4_0k6xq")]
+visible = false
+layout_mode = 1

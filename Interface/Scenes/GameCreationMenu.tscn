@@ -1,0 +1,230 @@
+[gd_scene format=3 uid="uid://4jkwkmouyapo"]
+
+[ext_resource type="Script" uid="uid://bwsf1dfstheem" path="res://Interface/Scripts/GameCreationMenu.cs" id="1_8dmnq"]
+[ext_resource type="PackedScene" uid="uid://clo03aag78xma" path="res://Interface/Scenes/MapTile.tscn" id="2_jkl0b"]
+[ext_resource type="Script" uid="uid://d4kc7upcasis3" path="res://Resources/MapResource.cs" id="2_uclmx"]
+[ext_resource type="Resource" uid="uid://bhyydk5xegnfi" path="res://Resources/TestMap.tres" id="3_jkl0b"]
+[ext_resource type="Resource" uid="uid://bwbp5g1cn0s4c" path="res://Resources/AlphaMap.tres" id="5_3qr6p"]
+[ext_resource type="Resource" uid="uid://ba88bfrkccfbf" path="res://Resources/BetaMap.tres" id="6_u1r37"]
+
+[node name="GameCreationMenu" type="Control" unique_id=915298518 node_paths=PackedStringArray("TimeCapSpin", "TimerEnabled", "PointsCapSpin", "KillCapEnabled", "MaximumPlayersSpin", "StartButton", "MaximumHealthSpin", "SpeedSpin", "GunDamageSpin", "GunAmmoSpin", "MeleeDamageSpin", "BackButton", "MapTilesBox")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8dmnq")
+TimeCapSpin = NodePath("MarginContainer/VBoxContainer/MapSettingsBox/TimerBox")
+TimerEnabled = NodePath("MarginContainer/VBoxContainer/MapSettingsBox/TimerCheckBox")
+PointsCapSpin = NodePath("MarginContainer/VBoxContainer/MapSettingsBox/PointsCapBox")
+KillCapEnabled = NodePath("MarginContainer/VBoxContainer/MapSettingsBox/PointsCapCheckBox")
+MaximumPlayersSpin = NodePath("MarginContainer/VBoxContainer/MapSettingsBox/MaximumPlayersBox")
+StartButton = NodePath("MarginContainer/VBoxContainer/CharacterSettingsBox/StartButton")
+MaximumHealthSpin = NodePath("MarginContainer/VBoxContainer/CharacterSettingsBox/MaximumHealthBox")
+SpeedSpin = NodePath("MarginContainer/VBoxContainer/CharacterSettingsBox/SpeedBox")
+GunDamageSpin = NodePath("MarginContainer/VBoxContainer/WeaponSettingsBox/GunDamageBox")
+GunAmmoSpin = NodePath("MarginContainer/VBoxContainer/WeaponSettingsBox/AmmoBox")
+MeleeDamageSpin = NodePath("MarginContainer/VBoxContainer/WeaponSettingsBox/MeleeDamageBox")
+BackButton = NodePath("MarginContainer/VBoxContainer/BackButton")
+MapTilesBox = NodePath("MarginContainer/VBoxContainer/MapsBox")
+MapTile = ExtResource("2_jkl0b")
+MapRoster = Array[ExtResource("2_uclmx")]([ExtResource("3_jkl0b"), ExtResource("5_3qr6p"), ExtResource("6_u1r37")])
+
+[node name="Panel" type="Panel" parent="." unique_id=709767587]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1372820356]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=569002397]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1493254433]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Back to server list"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1398288048]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 35
+text = "Match tuning"
+horizontal_alignment = 1
+
+[node name="MapsBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=429110438]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="MapSettingsBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1785777238]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Spacer6" type="Control" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=2145809111]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TimerBox" type="SpinBox" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=1572886464]
+layout_mode = 2
+min_value = 60.0
+value = 60.0
+allow_greater = true
+editable = false
+
+[node name="TimerCheckBox" type="CheckBox" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=1759775663]
+layout_mode = 2
+text = "Seconds cap"
+
+[node name="Spacer2" type="Control" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=1640168389]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PointsCapBox" type="SpinBox" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=266605261]
+layout_mode = 2
+min_value = 3.0
+value = 3.0
+allow_greater = true
+editable = false
+
+[node name="PointsCapCheckBox" type="CheckBox" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=1886091622]
+layout_mode = 2
+text = "Points cap
+"
+
+[node name="Spacer3" type="Control" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=1252030400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MaximumPlayersBox" type="SpinBox" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=922101055]
+layout_mode = 2
+min_value = 2.0
+max_value = 6.0
+value = 2.0
+
+[node name="MaximumPlayerLabel" type="Label" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=859863758]
+layout_mode = 2
+text = "Maximum players"
+
+[node name="Spacer4" type="Control" parent="MarginContainer/VBoxContainer/MapSettingsBox" unique_id=207238034]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WeaponSettingsBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=801300013]
+layout_mode = 2
+
+[node name="Spacer6" type="Control" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=317569199]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AmmoBox" type="SpinBox" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=1480830556]
+layout_mode = 2
+min_value = 1.0
+value = 6.0
+allow_greater = true
+
+[node name="AmmoCheckBox" type="Label" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=542864910]
+layout_mode = 2
+text = "Gun ammo"
+
+[node name="Spacer2" type="Control" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=1959130906]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GunDamageBox" type="SpinBox" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=1889688956]
+layout_mode = 2
+min_value = 1.0
+value = 5.0
+allow_greater = true
+
+[node name="GunDamageCheckBox" type="Label" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=413456190]
+layout_mode = 2
+text = "Gun damage"
+
+[node name="Spacer3" type="Control" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=2039696134]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MeleeDamageBox" type="SpinBox" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=1170497010]
+layout_mode = 2
+min_value = 1.0
+value = 3.0
+allow_greater = true
+
+[node name="MeleeDamageCheckBox" type="Label" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=347535490]
+layout_mode = 2
+text = "Melee damage"
+
+[node name="Spacer4" type="Control" parent="MarginContainer/VBoxContainer/WeaponSettingsBox" unique_id=1272419774]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CharacterSettingsBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=470887130]
+layout_mode = 2
+
+[node name="Spacer6" type="Control" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1350590292]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MaximumHealthBox" type="SpinBox" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1401133524]
+layout_mode = 2
+min_value = 1.0
+value = 10.0
+allow_greater = true
+
+[node name="MaximumHealthCheckBox" type="Label" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1111595554]
+layout_mode = 2
+text = "Maximum health"
+
+[node name="Spacer2" type="Control" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1620519895]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpeedBox" type="SpinBox" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1730387013]
+layout_mode = 2
+min_value = 1.0
+max_value = 500.0
+value = 250.0
+allow_greater = true
+
+[node name="SpeedCheckBox" type="Label" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=818227380]
+layout_mode = 2
+text = "Movespeed"
+
+[node name="Spacer3" type="Control" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=403604429]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacer8" type="Control" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=1735885857]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=2136775292]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+text = "Start game"
+
+[node name="Spacer5" type="Control" parent="MarginContainer/VBoxContainer/CharacterSettingsBox" unique_id=169973539]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=1360499751]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1

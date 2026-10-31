@@ -1,0 +1,37 @@
+TODO:
+	maybe make controller work?
+	do new mechanics
+	GrApHiCs
+
+VERY OPTIONAL TODO:
+	make athletics interruptable
+
+Game idea: // obsolite btw, had to cancel most of features because I started late
+	gun shooting straight
+	gun options, for now only a revolver
+	guns do 2 damage
+	
+	melee weapon can attack
+	melee options for now is knife
+	melee weapons do 3 damage
+	
+	any weapon character holds can be thrown, it will be unusable after that
+	deals 4 damage
+	
+	character can perform punch attack, victim will drop its weapon
+	punches do 1
+	
+	character is fairly athletic
+	character can slide and backflip, these moves could be interrupted
+	character have 10 hit points
+	
+PILES OF CANCELED FEATURES:
+	spawn destructable obstacles for dynamic map layout
+	obstacles have 3 hit points
+	
+	game will have 2 modes: KoTH, Control Points (TF2 inspired)
+	all game modes will have timer in some way
+	match can be tuned to give every player a starter weapon or change the timer
+	
+	character and obstacle will share health component. There is no need for 
+	weapon component as only the character will wield weapons.

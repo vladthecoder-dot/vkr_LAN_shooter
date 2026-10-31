@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dk30yel7tovf8"]
+
+[ext_resource type="Texture2D" uid="uid://cjfiyo7lndg3g" path="res://Sprites/GunSprites/Hit1.png" id="1_udql2"]
+[ext_resource type="Texture2D" uid="uid://bujjhb0o05lay" path="res://Sprites/GunSprites/Hit2.png" id="2_6qk5y"]
+[ext_resource type="Texture2D" uid="uid://df1c02ix0monc" path="res://Sprites/GunSprites/Hit3.png" id="3_oufc1"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_udql2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6qk5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oufc1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]

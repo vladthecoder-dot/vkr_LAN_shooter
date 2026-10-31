@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dscmrs76dofbp"]
+
+[ext_resource type="Texture2D" uid="uid://b5ja7x18ba45t" path="res://Sprites/GunSprites/GunIdle.png" id="1_vy1wy"]
+[ext_resource type="Texture2D" uid="uid://ct48pgfdasap5" path="res://Sprites/GunSprites/GunShoot1.png" id="2_w5avm"]
+[ext_resource type="Texture2D" uid="uid://du3ank1xa2e86" path="res://Sprites/GunSprites/GunShoot2.png" id="3_ib7sl"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.1,
+"texture": ExtResource("1_vy1wy")
+}, {
+"duration": 1.2,
+"texture": ExtResource("2_w5avm")
+}, {
+"duration": 1.2,
+"texture": ExtResource("3_ib7sl")
+}, {
+"duration": 0.8,
+"texture": ExtResource("1_vy1wy")
+}],
+"loop": false,
+"name": &"gun_shooting",
+"speed": 12.0
+}]

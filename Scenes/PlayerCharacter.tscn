@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://f0rq5fu401lv"]
+
+[ext_resource type="Script" uid="uid://colc1dhcq7uhj" path="res://Scripts/PlayerCharacter.cs" id="1_oolk3"]
+[ext_resource type="Texture2D" uid="uid://bn2cigdt3ot41" path="res://Sprites/AuthorityMarker.png" id="2_id6tp"]
+[ext_resource type="Texture2D" uid="uid://b1u06a0jfuqtq" path="res://Sprites/CharacterSprite.png" id="3_id6tp"]
+[ext_resource type="PackedScene" uid="uid://buhw0w7rlvsl6" path="res://Scenes/MeleeHitbox.tscn" id="4_id6tp"]
+[ext_resource type="Script" uid="uid://fn0hoykcg3ue" path="res://Scripts/HealthComponent.cs" id="4_r4x55"]
+[ext_resource type="Script" uid="uid://tm1t4b0tlipc" path="res://Scripts/MeleeComponent.cs" id="5_r4x55"]
+[ext_resource type="AudioStream" uid="uid://bfx7f3rh85h4x" path="res://Sounds/mixkit-boxing-punch-2051.wav" id="6_wnmxb"]
+[ext_resource type="AudioStream" uid="uid://cmfdsb7faqjna" path="res://Sounds/mixkit-video-game-health-recharge-2837.wav" id="7_k5f8r"]
+[ext_resource type="AudioStream" uid="uid://b8n3ev3au5t3p" path="res://Sounds/mixkit-player-jumping-in-a-video-game-2043.wav" id="9_cl0yw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y7k42"]
+radius = 22.0
+height = 82.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2getf"]
+radius = 34.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2getf"]
+radius = 22.0
+height = 82.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_2getf"]
+properties/0/path = NodePath("Visuals:scale")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("NormalCollision:visible")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath("BackflipCollision:visible")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath("SlidingCollision:visible")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+properties/4/path = NodePath("NormalCollision:disabled")
+properties/4/spawn = true
+properties/4/replication_mode = 1
+properties/5/path = NodePath("BackflipCollision:disabled")
+properties/5/spawn = true
+properties/5/replication_mode = 1
+properties/6/path = NodePath("SlidingCollision:disabled")
+properties/6/spawn = true
+properties/6/replication_mode = 1
+properties/7/path = NodePath("HealthComponent:Alive")
+properties/7/spawn = true
+properties/7/replication_mode = 1
+properties/8/path = NodePath(".:position")
+properties/8/spawn = true
+properties/8/replication_mode = 1
+properties/9/path = NodePath("Visuals/CharacterSprite:rotation")
+properties/9/spawn = true
+properties/9/replication_mode = 1
+properties/10/path = NodePath("Visuals/SlidingCharacterSprite:visible")
+properties/10/spawn = true
+properties/10/replication_mode = 1
+properties/11/path = NodePath("Visuals/CharacterSprite:visible")
+properties/11/spawn = true
+properties/11/replication_mode = 1
+
+[node name="PlayerCharacter" type="CharacterBody2D" unique_id=1008233796 node_paths=PackedStringArray("CharacterVisuals", "AuthorityMarkerSprite", "CharacterSprite", "SlidingSprite", "ReviveSound", "JumpSound", "Melee", "HealthComponent")]
+collision_layer = 2
+script = ExtResource("1_oolk3")
+CharacterVisuals = NodePath("Visuals")
+AuthorityMarkerSprite = NodePath("Visuals/AuthorityMarkerSprite")
+CharacterSprite = NodePath("Visuals/CharacterSprite")
+SlidingSprite = NodePath("Visuals/SlidingCharacterSprite")
+ReviveSound = NodePath("Revive")
+JumpSound = NodePath("Jump")
+WeaponHolder = NodePath("Visuals/WeaponHolder")
+Melee = NodePath("MeleeComponent")
+HealthComponent = NodePath("HealthComponent")
+JumpVelocity = 450.0
+CoyoteTime = 0.15
+SlideSlowdown = 700.0
+SlideVelocity = 600.0
+
+[node name="NormalCollision" type="CollisionShape2D" parent="." unique_id=2001859181]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_y7k42")
+
+[node name="BackflipCollision" type="CollisionShape2D" parent="." unique_id=1023164150]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_2getf")
+debug_color = Color(0.70112544, 0.49197412, 0, 0.41960785)
+
+[node name="SlidingCollision" type="CollisionShape2D" parent="." unique_id=2117334294]
+position = Vector2(0, 18)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_2getf")
+debug_color = Color(0.99763614, 0, 0.17165193, 0.41960785)
+
+[node name="Visuals" type="Node2D" parent="." unique_id=1464672531]
+scale = Vector2(0.9999998, 1)
+
+[node name="AuthorityMarkerSprite" type="Sprite2D" parent="Visuals" unique_id=1664249697]
+position = Vector2(0, -49)
+scale = Vector2(1.0000002, 1)
+texture = ExtResource("2_id6tp")
+
+[node name="CharacterSprite" type="Sprite2D" parent="Visuals" unique_id=59961425]
+texture = ExtResource("3_id6tp")
+
+[node name="SlidingCharacterSprite" type="Sprite2D" parent="Visuals" unique_id=383103951]
+visible = false
+position = Vector2(7.460701e-14, 18)
+rotation = -1.5707964
+texture = ExtResource("3_id6tp")
+
+[node name="WeaponHolder" type="Node2D" parent="Visuals" unique_id=1161707030]
+position = Vector2(16.000004, 4)
+scale = Vector2(1.0000001, 1)
+
+[node name="PunchPoint" type="Node2D" parent="Visuals" unique_id=583115484]
+position = Vector2(25.000002, 3.0000005)
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=180640121]
+replication_config = SubResource("SceneReplicationConfig_2getf")
+
+[node name="WeaponSpawner" type="MultiplayerSpawner" parent="." unique_id=422162823]
+_spawnable_scenes = PackedStringArray("uid://b685vjtv7wntn")
+spawn_path = NodePath("../Visuals/WeaponHolder")
+
+[node name="MeleeSpawner" type="MultiplayerSpawner" parent="." unique_id=463872771]
+_spawnable_scenes = PackedStringArray("uid://buhw0w7rlvsl6")
+spawn_path = NodePath("../Visuals/PunchPoint")
+
+[node name="MeleeComponent" type="Node" parent="." unique_id=451266599 node_paths=PackedStringArray("MeleeSound")]
+script = ExtResource("5_r4x55")
+Hitbox = ExtResource("4_id6tp")
+AttackCooldown = 0.4
+SpawnPath = NodePath("../Visuals/PunchPoint")
+MeleeSound = NodePath("../Melee")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1327510497 node_paths=PackedStringArray("Visuals")]
+script = ExtResource("4_r4x55")
+Visuals = NodePath("..")
+
+[node name="PlayerName" type="Label" parent="." unique_id=1413517932]
+offset_left = -38.0
+offset_top = -92.0
+offset_right = 38.0
+offset_bottom = -69.0
+pivot_offset_ratio = Vector2(0.5, 1)
+text = "NAME"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=2119098522]
+offset_left = -38.0
+offset_top = -63.0
+offset_right = 40.0
+offset_bottom = -56.0
+pivot_offset_ratio = Vector2(0.5, 1)
+theme_override_colors/font_color = Color(0.51085764, 0.59955144, 0.1484333, 1)
+value = 100.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthLabel" type="Label" parent="HealthBar" unique_id=1654522211]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 10
+text = "HEALTH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Revive" type="AudioStreamPlayer" parent="." unique_id=350087606]
+stream = ExtResource("7_k5f8r")
+volume_db = -45.0
+max_polyphony = 6
+
+[node name="Melee" type="AudioStreamPlayer" parent="." unique_id=792258767]
+stream = ExtResource("6_wnmxb")
+volume_db = -30.0
+max_polyphony = 18
+
+[node name="Jump" type="AudioStreamPlayer" parent="." unique_id=368485970]
+stream = ExtResource("9_cl0yw")
+volume_db = -35.0
